@@ -3,6 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import LogRocket from 'logrocket';
+import setupLogRocketReact from 'logrocket-react';
+
+LogRocket.init('3j5gn7/reactmeals');
+LogRocket.identify('Tester', {
+  name: 'Richard',
+  email: 'richard.odonoghue.nz@gmail.com',
+});
+
+setupLogRocketReact(LogRocket);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
